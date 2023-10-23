@@ -21,7 +21,7 @@ export default {
     extend: {
       colors: {
         transparent: 'transparent',
-        primary: '#3056d3',
+        primary: '#000000',
         dark: '#090e34',
         body: '#637381',
       },

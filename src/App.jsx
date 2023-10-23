@@ -7,16 +7,18 @@ import Header from './components/Header';
 import ProductDetails from './pages/ProductDetails';
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/product/:id' element={<ProductDetails />} />
-        <Route path='*' element={<h1>Not Found 404</h1>} />
-      </Routes>
-      <Sidebar />
-      <Footer />
-    </BrowserRouter>
+    <div className='overflow-hidden relative'>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/product/:id' element={<ProductDetails />} />
+          <Route path='*' element={<h1>Not Found 404</h1>} />
+        </Routes>
+        <Sidebar />
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
